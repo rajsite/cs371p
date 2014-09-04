@@ -1,0 +1,37 @@
+--
+CS371p: Quiz #1 (7 pts)
+--
+
+--------------------------------------------------------------------------
+ 1. What access directives are possible on a Java class member, and what
+    kind of access is granted?
+    (2 pts)
+--
+
+public: everywhere
+protected: descendents and package
+private: only the class
+<nothing>: package
+
+--------------------------------------------------------------------------
+ 2. Of the access directives in (1), which are available for top-level
+    Java classes?
+    (2 pts)
+--
+
+public
+<nothing>
+
+--------------------------------------------------------------------------
+ 3. List any TWO pieces of advice from "Advice for Computer Science
+ 	College Students".
+    (2 pts)
+--
+
+write
+learn C
+learn microeconomics
+excel in non-CS classes
+take programming-intensive classes
+stop worrying about jobs going to India
+get a good summer internship
