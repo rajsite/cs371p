@@ -30,8 +30,8 @@ int main () {
     return 0;}
 
 /*
-% g++ -std=c++11 -fprofile-arcs -ftest-coverage -pedantic -Wall -isystem /usr/local/include/gtest -pthread Coverage2.c++ -o Coverage2.app /usr/local/lib/gtest_main.a
-Coverage2.app
+% g++-4.7 -fprofile-arcs -ftest-coverage -pedantic -std=c++11 -Wall Coverage1.c++ -o Coverage1 -lgtest -lgtest_main -pthread
+Coverage2
 Coverage2.c++
 Done.
 

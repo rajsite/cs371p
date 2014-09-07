@@ -38,7 +38,6 @@ int main () {
     domain_error x("abc");
     logic_error& y = x;
     exception&   z = y;
-    assert(&z == &x);
 
     cout << "Done." << endl;
     return 0;}

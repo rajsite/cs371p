@@ -34,6 +34,5 @@ final class Exceptions {
         Exception x = new IllegalAccessException();
         Throwable y = x;
         Object    z = y;
-        assert z == x;
 
         System.out.println("Done.");}}
