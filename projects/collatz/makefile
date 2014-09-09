@@ -25,7 +25,7 @@ Collatz.log:
 Doxyfile:
 	doxygen -g
 
-html: Collatz.h Collatz.c++ RunCollatz.c++ TestCollatz.c++
+html: Doxyfile Collatz.h Collatz.c++ RunCollatz.c++ TestCollatz.c++
 	doxygen Doxyfile
 
 RunCollatz: Collatz.h Collatz.c++ RunCollatz.c++
