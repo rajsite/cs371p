@@ -1,4 +1,4 @@
-//x ----------------------------
+// ----------------------------
 // projects/collatz/Collatz.c++
 // Copyright (C) 2014
 // Glenn P. Downing
