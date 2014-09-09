@@ -1,0 +1,31 @@
+--
+CS371p: Quiz #3 (7 pts)
+--
+
+--------------------------------------------------------------------------
+ 1. What does the Sapir-Whorf hypothesis assert?
+    [Sec. 1.2, Pg. 5]
+    (1 pt)
+--
+
+It may be possible for an individual working in one language to
+imagine thoughts or utter ideas that cannot in any way be translated,
+or even understood by individuals operating in a different linguistic
+framework.
+
+--------------------------------------------------------------------------
+ 2. What is the difference between is-a and has-a abstraction?
+    [Sec. 2.2, Pg. 31]
+    (2 pts)
+--
+
+division into specialization vs. division into parts
+
+--------------------------------------------------------------------------
+ 3. Describe the three kinds of cache: lazy, eager, meta.
+    (3 pts)
+--
+
+lazy: fill as you read
+eager: fill before you read
+meta: fill outside of program
