@@ -1,4 +1,4 @@
-all:
+allx:
 
 clean:
 	rm -f *.gcda
