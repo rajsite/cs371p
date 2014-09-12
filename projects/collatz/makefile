@@ -1,23 +1,5 @@
 all:
 
-clean:
-	rm -f *.gcda
-	rm -f *.gcno
-	rm -f *.gcov
-	rm -f RunCollatz
-	rm -f RunCollatz.tmp
-	rm -f RunCollatz.valgrind
-	rm -f TestCollatz
-	rm -f TestCollatz.out
-	rm -f TestCollatz.valgrind
-
-scrub:
-	make --no-print-directory clean
-	rm -f Collatz.log
-	rm -f Doxyfile
-	rm -rf html
-	rm -rf latex
-
 Collatz.log:
 	git log > Collatz.log
 
@@ -50,3 +32,21 @@ TestCollatz.out: TestCollatz
 
 TestCollatz.valgrind: TestCollatz
 	valgrind TestCollatz > TestCollatz.valgrind 2>&1
+
+clean:
+	rm -f *.gcda
+	rm -f *.gcno
+	rm -f *.gcov
+	rm -f RunCollatz
+	rm -f RunCollatz.tmp
+	rm -f RunCollatz.valgrind
+	rm -f TestCollatz
+	rm -f TestCollatz.out
+	rm -f TestCollatz.valgrind
+
+scrub:
+	make --no-print-directory clean
+	rm -f Collatz.log
+	rm -f Doxyfile
+	rm -rf html
+	rm -rf latex
