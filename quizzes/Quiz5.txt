@@ -1,0 +1,31 @@
+--
+CS371p: Quiz #5 (7 pts) [Henry]
+--
+
+--------------------------------------------------------------------------
+ 1. What is the difference between a non-static inner class in Java and a
+    nested class in C++?
+    [Sec. 4.4, Pg. 91]
+    (2 pts)
+--
+
+the non-static inner class in Java is tied to an instance
+the nested class in C++ is not
+
+--------------------------------------------------------------------------
+ 2. What is a checked exception?
+    C++ has checked exceptions. True or False?
+    (2 pts)
+--
+
+an exception that must be caught or advertised as being thrown
+false
+
+--------------------------------------------------------------------------
+ 3. For a method in a base class that throws a checked exception, the
+    overriding method in the derived class must throw the exact same type
+    of exception. True or False?
+    (2 pts)
+--
+
+false
