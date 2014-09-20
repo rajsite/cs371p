@@ -1,0 +1,27 @@
+--
+CS371p: Quiz #8 (7 pts) [Thanh]
+--
+
+--------------------------------------------------------------------------
+ 1. In C++, for the '<<' operator that is defined on 'int', what is
+    the l-value / r-value nature of the return and the left argument?
+    (2 pts)
+--
+
+r-value, r-value
+
+--------------------------------------------------------------------------
+ 2. In C++, for the '<<=' operator that is defined on 'int', what is
+    the l-value / r-value nature of the return and the left argument?
+    (2 pts)
+--
+
+l-value, l-value
+
+--------------------------------------------------------------------------
+ 3. In Java, for the '<<=' operator that is defined on 'int', what is
+    the l-value / r-value nature of the return and the left argument?
+    (2 pts)
+--
+
+r-value, l-value
