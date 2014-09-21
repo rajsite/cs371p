@@ -36,10 +36,3 @@ clean:
 	rm -f RunCollatz.tmp
 	rm -f TestCollatz
 	rm -f TestCollatz.out
-
-scrub:
-	make --no-print-directory clean
-	rm -f Collatz.log
-	rm -f Doxyfile
-	rm -rf html
-	rm -rf latex

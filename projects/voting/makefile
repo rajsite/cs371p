@@ -36,10 +36,3 @@ clean:
 	rm -f RunVoting.tmp
 	rm -f TestVoting
 	rm -f TestVoting.out
-
-scrub:
-	make --no-print-directory clean
-	rm -f Voting.log
-	rm -f Doxyfile
-	rm -rf html
-	rm -rf latex
