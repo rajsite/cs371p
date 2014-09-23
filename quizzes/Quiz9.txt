@@ -1,0 +1,23 @@
+--
+CS371p: Quiz #9 (7 pts) [Henry]
+--
+
+--------------------------------------------------------------------------
+ 1. In the Bloomberg presentation what was the name of the code review
+    tool?
+    (2 pts)
+--
+
+Phabricator
+
+--------------------------------------------------------------------------
+ 2. In C++, what four methods constitute the orthodox canonical class
+    form?
+    [Sec. 5.6, Pg. 115]
+    (4 pts)
+--
+
+default constructor
+copy constructor
+copy assignment operator
+destructor
