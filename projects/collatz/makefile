@@ -13,7 +13,7 @@ RunCollatz: Collatz.h Collatz.c++ RunCollatz.c++
 	g++-4.7 -pedantic -std=c++11 -Wall Collatz.c++ RunCollatz.c++ -o RunCollatz
 
 RunCollatz.out: RunCollatz RunCollatz.in
-	RunCollatz < RunCollatz.in > RunCollatz.tmp
+	RunCollatz < RunCollatz.in > RunCollatz.out
 
 RunCollatz.tmp: RunCollatz RunCollatz.in
 	RunCollatz < RunCollatz.in > RunCollatz.tmp
