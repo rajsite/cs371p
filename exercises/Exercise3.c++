@@ -18,14 +18,14 @@ class range_iterator {
         T _n;
 
     public:
-        range_iterator (int n) :
+        range_iterator (const T& n) :
                 _n (n)
             {}
 
         bool operator != (const range_iterator& other) const {
             return _n != other._n;}
 
-        int operator * () const {
+        const T& operator * () const {
             return _n;}
 
         range_iterator& operator ++ () {
