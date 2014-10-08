@@ -45,10 +45,10 @@ class range_iterable {
                 {}
 
             iterator begin () const {
-                return _b;}
+                return iterator(_b);}
 
             iterator end () const {
-                return _e;}};
+                return iterator(_e);}};
 
 int main () {
     using namespace std;
