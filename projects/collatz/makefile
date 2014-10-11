@@ -32,7 +32,6 @@ clean:
 	rm -f *.gcno
 	rm -f *.gcov
 	rm -f RunCollatz
-	rm -f RunCollatz.out
 	rm -f RunCollatz.tmp
 	rm -f TestCollatz
 	rm -f TestCollatz.out
