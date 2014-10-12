@@ -1,4 +1,4 @@
-# This file is named "gitignore".
+#x This file is named "gitignore".
 # Rename it ".gitignore".
 
 # It is a listing of all files that git will ignore when a "git add" is performed.
