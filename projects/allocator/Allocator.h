@@ -110,7 +110,7 @@ class Allocator {
          * after allocation there must be enough space left for a valid block
          * the smallest allowable block is sizeof(T) + (2 * sizeof(int))
          * choose the first block that fits
-         * throw a bad_alloc exception, if allocation fails
+         * return 0, if allocation fails
          */
         pointer allocate (size_type n) {
             // <your code>
