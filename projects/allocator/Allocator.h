@@ -110,7 +110,8 @@ class Allocator {
          * after allocation there must be enough space left for a valid block
          * the smallest allowable block is sizeof(T) + (2 * sizeof(int))
          * choose the first block that fits
-         * return 0, if allocation fails
+         * return 0 or throw a bad_alloc exception, whatever the std allocator does,
+         * if allocation fails
          */
         pointer allocate (size_type n) {
             // <your code>
@@ -124,7 +125,6 @@ class Allocator {
         /**
          * O(1) in space
          * O(1) in time
-         * <your documentation>
          */
         void construct (pointer p, const_reference v) {
             new (p) T(v);                               // this is correct and exempt
@@ -138,6 +138,7 @@ class Allocator {
          * O(1) in space
          * O(1) in time
          * after deallocation adjacent free blocks must be coalesced
+         * throw an invalid_argument exception, if pointer is invalid
          * <your documentation>
          */
         void deallocate (pointer p, size_type) {
@@ -151,8 +152,6 @@ class Allocator {
         /**
          * O(1) in space
          * O(1) in time
-         * throw an invalid_argument exception, if pointer is invalid
-         * <your documentation>
          */
         void destroy (pointer p) {
             p->~T();               // this is correct
