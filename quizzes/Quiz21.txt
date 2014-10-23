@@ -1,0 +1,14 @@
+--
+CS371p: Quiz #21 (7 pts) [Thanh]
+--
+
+--------------------------------------------------------------------------
+ 1. Under what circumstances MUST the member initialization list be used?
+    Be precise.
+    (6 pts)
+--
+
+a const member
+a reference member
+a user-defined member with no default constructor
+a base class with no default constructor
