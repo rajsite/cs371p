@@ -20,7 +20,7 @@
 // Allocator
 // ---------
 
-template <typename T, int N>
+template <typename T, std::size_t N>
 class Allocator {
     public:
         // --------
