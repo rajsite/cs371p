@@ -1,0 +1,26 @@
+--
+CS371p: Quiz #23 (7 pts) [Thanh]
+--
+
+--------------------------------------------------------------------------
+ 1. What std containers can back std::priority_queue?
+    (2 pts)
+--
+
+vector, deque
+
+--------------------------------------------------------------------------
+ 2. Why is the API of std::priority_queue like that of std::stack instead
+    of like that of std::queue?
+    (2 pts)
+--
+
+the back of a priority_queue is not well defined
+
+--------------------------------------------------------------------------
+ 3. Why are there two versions of top() in std::stack, but only one
+    version of it in std::priority_queue?
+    (2 pts)
+--
+
+can't modify the top of a priority queue in place
