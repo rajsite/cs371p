@@ -1,26 +1,8 @@
 // -----------------------------
 // projects/darwin/RunDarwin.c++
-// Copyright (C) 2013
+// Copyright (C) 2014
 // Glenn P. Downing
 // -----------------------------
-
-/*
-To run the program:
-    % g++ -pedantic -std=c++0x -Wall Darwin.c++ RunDarwin.c++ -o RunDarwin
-    % valgrind RunDarwin > RunDarwin.out
-
-To configure Doxygen:
-    doxygen -g
-That creates the file Doxyfile.
-Make the following edits:
-    EXTRACT_ALL            = YES
-    EXTRACT_PRIVATE        = YES
-    EXTRACT_STATIC         = YES
-    GENERATE_LATEX         = NO
-
-To document the program:
-    doxygen Doxyfile
-*/
 
 // --------
 // includes
