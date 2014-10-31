@@ -12,11 +12,11 @@ html: Doxyfile Darwin.h Darwin.c++ RunDarwin.c++ TestDarwin.c++
 RunDarwin: Darwin.h Darwin.c++ RunDarwin.c++
 	g++-4.7 -pedantic -std=c++11 -Wall Darwin.c++ RunDarwin.c++ -o RunDarwin
 
-RunDarwin.out: RunDarwin RunDarwin.in
-	RunDarwin < RunDarwin.in > RunDarwin.tmp
+RunDarwin.out: RunDarwin
+	RunDarwin > RunDarwin.tmp
 
-RunDarwin.tmp: RunDarwin RunDarwin.in
-	RunDarwin < RunDarwin.in > RunDarwin.tmp
+RunDarwin.tmp: RunDarwin
+	RunDarwin > RunDarwin.tmp
 	diff RunDarwin.tmp RunDarwin.out
 
 TestDarwin: Darwin.h Darwin.c++ TestDarwin.c++
