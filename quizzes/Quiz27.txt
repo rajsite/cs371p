@@ -1,0 +1,29 @@
+--
+CS371p: Quiz #27 (7 pts) [Henry]
+--
+
+--------------------------------------------------------------------------
+ 1. Describe the difference in binding time between overloading and
+    overriding.
+    [Sec. 15.0, Pg. 287]
+    (2 pts)
+--
+
+compile time vs. run time
+
+--------------------------------------------------------------------------
+ 2. What two concepts characterize two broad categories of overloading?
+    [Sec. 15.1, Pg. 289]
+    (2 pts)
+--
+
+type signature and scope
+
+--------------------------------------------------------------------------
+ 3. In C++, which TWO members will be NOT be automatically generated for a
+    class with a const data member?
+    (2 pts)
+--
+
+default constructor
+copy assignment operator
