@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<hr />
+<h3>
+	Due: Thu, 11 Sep 2014, 10pm<br />
+	70 pts, 7% of total grade.
+</h3>
+<hr />
+<h3>
+	Specification
+</h3>
+<hr />
+<p>
+	Write a program, <b>individually</b>, to solve <b>The 3n+1 Problem</b> in <b>C++</b> with some form of <b>cache</b>:
+</p>
+<ul>
+    <li><a href="http://uva.onlinejudge.org">UVa</a></li>
+    <li><a href="http://www.uvatoolkit.com">UVa Toolkit</a></li>
+	<li><a href="http://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;Itemid=8&amp;category=3&amp;page=show_problem&amp;problem=36">100 - The 3n plus 1 problem</a> [<a href="http://www.cs.utexas.edu/users/downing/cs371p/projects/Collatz.pdf">pdf</a>] (C++11 4.8.2)</li>
+	<li><a href="http://xkcd.com/710/">xkcd</a></li>
+</ul>
+<p>
+	You <b>may not</b> use <b>new</b>, <b>delete</b>, <b>malloc()</b> or <b>free()</b>. You <b>may</b> use the <b>STL</b>.
+</p>
+<h3>
+	Analysis
+</h3>
+<hr />
+<p>
+	These are additional descriptions of the underlying math:
+</p>
+<ul>
+	<li><a href="http://mathworld.wolfram.com/CollatzProblem.html">MathWorld</a></li>
+	<li><a href="http://en.wikipedia.org/wiki/Collatz_conjecture">Wikipedia</a></li>
+</ul>
+<h3>
+	Requirements
+</h3>
+<hr />
+<ol>
+	<li>Estimate time to completion.</li>
+	<li>Get an educational account with <b>5 private</b> repos at <b>GitHub</b>.</li>
+	<li>Create a <b>private Git repository</b> at <b>GitHub</b>, named <b>cs371p-collatz</b>.</li>
+	<li>Add <b>at least 10</b> of these <b>requirements</b> as <b>issues</b> to the <b>issue tracker</b> at <b>GitHub</b>.<br />
+	Add <b>at least 10</b> more issues, one for each <b>bug</b> or <b>feature</b>, both open and closed with a good description and a <b>label</b>.</li>
+	<li>Invite the graders to your <b>private code repo</b>.</li>
+	<li>Confirm that the graders have invited you back to the <b>public test repo</b>.</li>
+	<li>Clone your <b>private code repo</b> onto <b>your local directory</b>.</li>
+	<li>Make at least <b>5 commits</b>, one for each <b>bug</b> or <b>feature</b>.<br />
+	If you cannot describe your changes in a sentence, you are not committing often enough.<br />
+	Make meaningful commit messages identifying the corresponding <b>issue</b> in the <b>issue tracker</b> (see <a href="https://help.github.com/articles/closing-issues-via-commit-messages">here</a>).</li>
+	<li>Clone the <b>public class repo</b> onto <b>your local directory</b>.<br />
+	<span style="color: red">It is <b>critical</b> that you clone the <b>public class repo</b> into a <b>different directory</b> than the one you're using for your <b>private code repo</b>.</span></li>
+	<li>Copy the <b>code</b> files from the <b>clone</b> of the <b>public class repo</b> to the <b>clone</b> of the <b>private code repo</b>.</li>
+	<li>Run <b>RunCollatz.c++</b> and <b>TestCollatz.c++</b>, confirm the expected <b>successes</b>, and add, commit, and push to the <b>private code repo</b>.</li>
+	<li>Fix the given <b>unit tests</b>, confirm the expected <b>failures</b>, and add, commit, and push to the <b>private code repo</b>.</li>
+	<li>Write more <b>unit tests</b> in <b>TestCollatz.c++</b> that test <b>corner cases</b> and <b>failure cases</b> until you have an <b>average of 3 tests</b> for each function, confirm the expected <b>failures</b>, and add, commit, and push to the <b>private code repo</b>.</li>
+	<li>Implement and debug the <b>simplest possible solution</b> in <b>collatz_eval()</b> in <b>Collatz.h</b> and <b>Collatz.c++</b> with assertions that check <b>pre-conditions</b>, <b>post-conditions</b>, <b>argument validity</b>, and <b>return-value validity</b>, until all tests pass, and add, commit, and push to the <b>private code repo</b>.</li>
+	<li>Combine <b>Collatz.c++</b> and <b>RunCollatz.c++</b> into <b>UVaCollatz.c++</b> (don't forget to remove the <b>#include</b>).</li>
+	<li>Create an account on <b>UVa</b>.</li>
+	<li>Submit <b>UVaCollatz.c++</b> to <b>UVa</b> and confirm the likely result of <b>time exceeded</b> or <b>wrong answer</b>.</li>
+	<li>Debug the code until it's accepted by <b>UVa</b>, and add, commit, and push to the <b>private code repo</b>.</li>
+	<li>Create <b>1000 lines of acceptance tests</b> in <b>RunCollatz.in</b> and <b>RunCollatz.out</b> that test <b>corner cases</b> and <b>failure cases</b>, and add, commit, and push to the <b>private code repo</b>.</li>
+	<li>Clone the <b>public test repo</b> onto <b>your local directory</b>.<br />
+	<span style="color: red">It is <b>critical</b> that you clone the <b>public test repo</b> into a <b>different directory</b> than the one you're using for your <b>private code repo</b>.</span></li>
+	<li>Copy your <b>unit tests</b> and your <b>acceptance tests</b> to your <b>clone</b> of the <b>public test repo</b>, rename the files, do a <b>git pull</b> to synchronize your <b>clone</b>, and then add, commit and push to the <b>public test repo</b>.<br />
+	<span style="color: red">The files <b>MUST</b> be named <b>EID-RunCollatz.in</b>, <b>EID-RunCollatz.out</b>, <b>EID-TestCollatz.c++</b>, and <b>EID-TestCollatz.out</b> in the <b>public test repo</b>.</span></li>
+	<li>Implement and debug the <b>simplest possible cache</b> until all tests pass, and add, commit, and push to the <b>private code repo</b>.</li>
+	<li>Submit and debug until accepted by <b>UVa</b> and add, commit, and push to the <b>private code repo</b>.</li>
+	<li>Run <b>Doxygen</b>, which will create <b>html/</b>, that then documents the <b>interfaces</b> to your functions.<br />
+	Create <b>inline comments</b> if you need to explain the <b>why</b> of a particular implementation.<br />
+	Use a consistent <b>coding convention</b> with good variable names, good indentation, blank lines, and blank spaces.</li>
+	<li>Create a <b>log</b> of your <b>commits</b> in <b>Collatz.log</b>.</li>
+	<li>Obtain the <b>git SHA</b> with
+	<pre>git rev-parse HEAD</pre>
+	</li>
+	<li>Fill in the <b>Google Form</b>.</li>
+	<li><span style="color: red">It is <b>your</b> responsibility to protect your code from the rest of the students in the class. If your code gets out, <b>you</b> are as guilty as the recipient of <b>academic dishonesty</b>.</span></li>
+</ol>
+<h3>
+	Requirements for getting a non-zero grade.
+</h3>
+<hr />
+<ol>
+	<li><span style="color: red"><b>[&nbsp;&nbsp;5 pts]</b></span> <b>GitHub private repo</b> with <b>graders</b> invited as <b>collaborator</b> and a <b>log</b> of the <b>commits</b>.</li>
+	<li><span style="color: red"><b>[&nbsp;&nbsp;5 pts]</b></span> <b>GitHub issue tracker</b> with <b>issues</b> from <b>requirements</b> and <b>more</b>.</li>
+	<li><span style="color: red"><b>[15 pts]</b></span> Accepted solution to <b>UVa 4073 (C++ 4.3.2)</b> with some form of <b>cache</b>.</li>
+	<li><span style="color: red"><b>[15 pts]</b></span> Average of <b>3 unit tests</b> per function <b>with good coverage</b> in the <b>public test repo</b> with the <b>precise naming of the files</b>.</li>
+	<li><span style="color: red"><b>[15 pts]</b></span> <b>1000</b> lines of acceptance tests in the <b>public test repo</b> with the <b>precise naming of the files</b>.</li>
+	<li><span style="color: red"><b>[10 pts]</b></span> <b>Doxygen</b> documentation.</li>
+	<li><span style="color: red"><b>[&nbsp;&nbsp;5 pts]</b></span> <b>Google Form</b> with <b>time estimate</b>.</li>
+</ol>
+<h3>
+	Bonuses
+</h3>
+<hr />
+<ul>
+	<li>Your <b>acceptance tests</b> will be verified. Your <b>tests</b> will also be used to test the <b>solution</b> of <b>five</b> other students. You will be given a <b>max</b> of <b>10 bonus pts</b>, <b>2 bonus pts</b> for every <b>solution</b> that your <b>tests</b> break.</li>
+	<li><b>Bonus pts</b> will <b>not</b> increase the <b>total score</b> beyond the <b>max</b> score.</li>
+</ul>
+<h3>
+	Penalties
+</h3>
+<hr />
+<ul>
+	<li>Your <b>solution</b> will be verified. Your <b>solution</b> will also be tested against the <b>acceptance tests</b> of <b>five</b> other students. You will be given a <b>max</b> of <b>10 penalty pts</b>, <b>2 penalty pts</b> for every set of <b>tests</b> that break your <b>solution</b>.</li>
+</ul>
+<h3>
+	Private Code Repo Files
+</h3>
+<hr />
+<p>
+	Place the following files, with these <b>exact</b> names, directly in <b>cs371p-collatz</b>, no subfolders:
+</p>
+<ol>
+	<li><a href="https://github.com/gpdowning/cs371p/blob/master/projects/collatz/Collatz.h">Collatz.h</a> (do <b>not</b> change the interfaces)</li>
+	<li><a href="https://github.com/gpdowning/cs371p/blob/master/projects/collatz/Collatz.c++">Collatz.c++</a> (do <b>not</b> change the interfaces)</li>
+	<li><a href="https://github.com/gpdowning/cs371p/blob/master/projects/collatz/RunCollatz.c++">RunCollatz.c++</a> (do <b>not</b> run <b>gcov</b>, do <b>not</b> run <b>valgrind</b>)</li>
+	<li><a href="https://github.com/gpdowning/cs371p/blob/master/projects/collatz/RunCollatz.in.txt">RunCollatz.in</a> (1000 pairs)</li>
+	<li><a href="https://github.com/gpdowning/cs371p/blob/master/projects/collatz/RunCollatz.out.txt">RunCollatz.out</a> (1000 triples, no <b>gcov</b> output, no <b>valgrind</b> output)</li>
+	<li><a href="https://github.com/gpdowning/cs371p/blob/master/projects/collatz/TestCollatz.c++">TestCollatz.c++</a> (average of <b>3 unit tests</b> per funciton/method, run <b>gcov</b>, run <b>valgrind</b>)</li>
+	<li><a href="https://github.com/gpdowning/cs371p/blob/master/projects/collatz/TestCollatz.out.txt">TestCollatz.out</a> (include <b>gcov</b> output, include <b>valgrind</b> output)</li>
+	<li><a href="https://www.cs.utexas.edu/users/downing/projects/python/collatz/html/">html/</a> (output of <b>Doxygen</b>)</li>
+	<li>Collatz.log (output of <b>git log</b>)</li>
+	<li>UVaCollatz.c++ (concatenation of <b>Collatz.c++</b> and <b>RunCollatz.c++</b>)</li>
+	<li><a href="https://github.com/gpdowning/cs371p/blob/master/projects/collatz/gitignore.txt">gitignore.txt</a> (rename <b>.gitignore</b>, for your use only, no need to submit)</li>
+	<li><a href="https://github.com/gpdowning/cs371p/blob/master/projects/collatz/makefile">makefile</a> (for your use only, no need to submit)</li>
+</ol>
+<h3>
+	Public Test Repo Files
+</h3>
+<hr />
+<p>
+	Place the following files, with these <b>exact</b> names, directly in <b>cs371p-fall-2014/collatz-tests/</b>, no subfolders:
+</p>
+<ol>
+	<li><a href="https://github.com/gpdowning/cs371p/blob/master/projects/collatz/RunCollatz.in.txt"><b>EID</b>-RunCollatz.in</a> (1000 pairs)</li>
+	<li><a href="https://github.com/gpdowning/cs371p/blob/master/projects/collatz/RunCollatz.out.txt"><b>EID</b>-RunCollatz.out</a> (1000 triples, no <b>gcov</b> output, no <b>valgrind</b> output)</li>
+	<li><a href="https://github.com/gpdowning/cs371p/blob/master/projects/collatz/TestCollatz.c++"><b>EID</b>-TestCollatz.c++</a> (average of <b>3 unit tests</b> per funciton/method, run <b>gcov</b>, run <b>valgrind</b>)</li>
+	<li><a href="https://github.com/gpdowning/cs371p/blob/master/projects/collatz/TestCollatz.out.txt"><b>EID</b>-TestCollatz.out</a> (include <b>gcov</b> output, include <b>valgrind</b> output)</li>
+</ol>
+<h3>
+	Tools
+</h3>
+<hr />
+<ul>
+	<li><a href="http://www.stack.nl/~dimitri/doxygen/">Doxygen</a></li>
+	<li><a href="http://gcc.gnu.org/onlinedocs/gcc/Gcov.html">Gcov</a></li>
+	<li><a href="http://www.git-scm.com">Git</a></li>
+	<li><a href="https://education.github.com">GitHub</a></li>
+	<li><a href="https://code.google.com/p/googletest/">Google Test</a></li>
+	<li><a href="http://www.valgrind.org">Valgrind</a></li>
+</ul>
+<h3>
+	Guides
+</h3>
+<hr />
+<ul>
+	<li><a href="http://git-scm.com/docs/gitignore/">.gitignore</a></li>
+	<li><a href="https://www.atlassian.com/git/tutorials/">Atlassian Git Tutorials</a></li>
+	<li><a href="http://www.git-tower.com/blog/git-cheat-sheet/">Git Cheat Sheet</a></li>
+	<li><a href="https://help.github.com/articles/generating-ssh-keys">Git Generating SSH Keys</a></li>
+	<li><a href="http://rogerdudler.github.io/git-guide/">Git Guides</a></li>
+	<li><a href="https://guides.github.com">Git Guides</a></li>
+	<li><a href="http://gitimmersion.com">Git Immersion</a></li>
+	<li><a href="http://gitref.org">Git Reference</a></li>
+	<li><a href="http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml">Google C++ Style Guide</a></li>
+	<li><a href="https://try.github.io">Try GitHub</a></li>
+</ul>
+<h3>
+	Graders
+</h3>
+<hr />
+<table>
+	<tr>
+		<th>Name</th>
+		<th>GitHub ID</th>
+		<th>GitHub Test Repository</th>
+		<th>Google Form</th>
+	</tr>
+	<tr>
+		<td>Henry Chen</td>
+		<td>chukhinhenry</td>
+		<td rowspan="4"><a href="https://github.com/cs371p-fall-2014/collatz-tests/">collatz-tests</a></td>
+		<td rowspan="4"><a href="https://docs.google.com/forms/d/1q8wNUggZKwswFGrPAFOZtI0ZnVuNIKBRGXlIUGIUU1k/viewform">Google Form</a></td>
+	</tr>
+	<tr>
+		<td>Sam Thompson</td>
+		<td>st028</td>
+	</tr>
+	<tr>
+		<td>Thanh Nguyen</td>
+		<td>thanhcs</td>
+	</tr>
+	<tr>
+		<td>Tyler Hunt</td>
+		<td>tylershunt</td>
+	</tr>
+</table>
+</body>
+</html>
