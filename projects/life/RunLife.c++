@@ -24,7 +24,6 @@ int main () {
 
     cout << "*** Life<ConwayCell> 21x13 ***" << endl;
     /*
-    read RunLifeConway.in // assume all Conway cells
     Simulate 12 evolutions.
     Print every grid (i.e. 0, 1, 2, 3, ... 12)
     */
@@ -35,7 +34,6 @@ int main () {
 
     cout << "*** Life<ConwayCell> 20x29 ***" << endl;
     /*
-    read RunLifeConway.in // assume all Conway cells
     Simulate 28 evolutions.
     Print every 4th grid (i.e. 0, 4, 8, ... 28)
     */
@@ -46,7 +44,6 @@ int main () {
 
     cout << "*** Life<ConwayCell> 109x69 ***" << endl;
     /*
-    read RunLifeConway.in // assume all Conway cells
     Simulate 283 evolutions.
     Print the first 10 grids (i.e. 0, 1, 2, ... 9).
     Print the 283rd grid.
@@ -62,7 +59,6 @@ int main () {
 
     cout << "*** Life<FredkinCell> 20x20 ***" << endl;
     /*
-    read RunLifeFredkin.in // assume all Fredkin cells
     Simulate 5 evolutions.
     Print every grid (i.e. 0, 1, 2, ... 5)
     */
@@ -73,7 +69,6 @@ int main () {
 
     cout << "*** Life<Cell> 20x20 ***" << endl;
     /*
-    read RunLifeCell.in // assume all Fredkin cells
     Simulate 5 evolutions.
     Print every grid (i.e. 0, 1, 2, ... 5)
     */
