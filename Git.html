@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<hr />
+<p>
+	<b>Git</b> is a powerful program that you <b>must</b> learn to use to help you mange your code.
+</p>
+<h3>
+	Configuring git
+</h3>
+<hr />
+<pre>
+% git config --global user.name "John Galt"
+% git config --global user.email jgalt@example.com
+% git config --global push.default simple
+% git config --global color.ui true
+</pre>
+<p>
+	If you're using OS X or Linux:
+</p>
+<pre>
+% git config --global core.autocrlf input
+</pre>
+<p>
+	If you're using Windows:
+</p>
+<pre>
+% git config --global core.autocrlf true
+</pre>
+<h3>
+	Checking the git configuration
+</h3>
+<hr />
+<pre>
+% git config -l
+user.name=John Galt
+user.email=jgalt@example.com
+push.default=simple
+color.ui=true
+core.autocrlf=input
+</pre>
+<h3>
+	Cloning the class repo from GitHub
+</h3>
+<hr />
+<pre>
+% git clone git://github.com/gpdowning/cs371p.git
+</pre>
+<p>
+	will clone all of the <b>examples</b>, <b>exercises</b>, and <b>projects</b> into the directory <b>cs371p</b>.
+</p>
+<h3>
+	Syncing with a repo
+</h3>
+<hr />
+<pre>
+% cd cs371p
+% git pull
+Already up-to-date.
+</pre>
+<h3>
+	Checking the status of a repo
+</h3>
+<hr />
+<pre>
+% cd cs371p
+% git status
+# On branch master
+nothing to commit, working directory clean
+</pre>
+<h3>
+	Creating a repo and connecting it to GitHub
+</h3>
+<hr />
+<pre>
+% touch README
+% git init
+% git add README
+% git commit -m 'first commit'
+% git remote add origin git@github.com:jgalt/my-repo.git
+% git push -u origin master
+</pre>
+<h3>
+	Adding to a Repo
+</h3>
+<hr />
+<pre>
+% cd my-repo
+% git add Foo.py
+% git add Bar.py
+% git commit -m "another commit"
+% git push
+</pre>
+</body>
+</html>
