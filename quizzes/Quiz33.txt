@@ -1,0 +1,25 @@
+--
+CS371p: Quiz #33 (7 pts) [Henry]
+--
+
+--------------------------------------------------------------------------
+ 1. What company does Sheryl Sandberg work for?
+    What is her position?
+    [A Woman's Place]
+    (2 pts)
+
+Facebook
+COO
+--
+
+--------------------------------------------------------------------------
+ 2. In C++ static binding is enabled by default.
+    Dynamic binding is enabled with the keyword "virtual".
+    Under what FOUR conditions will static binding occur anyway?
+    (4 pts)
+--
+
+on an object
+with an explicit reference to the base class
+in a constructor of the base class
+in the destructor of the base class
