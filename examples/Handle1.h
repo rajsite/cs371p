@@ -10,7 +10,11 @@
 template <typename T>
 class Handle {
     friend bool operator == (const Handle& lhs, const Handle& rhs) {
-        return (!lhs._p && !rhs._p) || (*lhs._p == *rhs._p);}
+        if (!lhs._p && !rhs._p)
+            return true;
+        if (!lhs._p || !rhs._p)
+            return false;
+        return (*lhs._p == *rhs._p);}
 
     friend bool operator != (const Handle& lhs, const Handle& rhs) {
         return !(lhs == rhs);}
