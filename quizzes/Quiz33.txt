@@ -7,10 +7,10 @@ CS371p: Quiz #33 (7 pts) [Henry]
     What is her position?
     [A Woman's Place]
     (2 pts)
+--
 
 Facebook
 COO
---
 
 --------------------------------------------------------------------------
  2. In C++ static binding is enabled by default.
