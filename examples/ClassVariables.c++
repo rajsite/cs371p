@@ -9,13 +9,13 @@ template <typename T>
 struct A {
     static T v0;
 
-//  static T v1 = v0 + 1; // error: ISO C++ forbids in-class initialization of non-const static member "A<T>::v1"
+//  static T v1 = 1;        // error: ISO C++ forbids in-class initialization of non-const static member "A<T>::v1"
     static T v1;
 
 //  static const T cv0 = 0; // error: ISO C++ forbids initialization of member constant "A<double>::cv0" of non-integral type "const double"
     static const T cv0;
 
-    static const int cv1 = cv0 + 1;
+    static const int cv1 = 1;
 
     enum {ev = 3};};
 
