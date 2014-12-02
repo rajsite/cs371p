@@ -1,0 +1,17 @@
+--
+CS371p: Quiz #36 (7 pts) [Thanh]
+--
+
+--------------------------------------------------------------------------
+ 1. In C++ what are the three consequences of defining a pure virtual
+    method?
+    Be very precise.
+    (6 pts)
+--
+
+the class becomes abstract
+
+the child must define the method or become abstract
+
+the definition of the method becomes optional and if defined must be
+defined outside of the class
