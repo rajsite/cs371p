@@ -3,8 +3,7 @@ CS371p: Quiz #36 (7 pts) [Thanh]
 --
 
 --------------------------------------------------------------------------
- 1. In C++ what are the three consequences of defining a pure virtual
-    method?
+ 1. In C++ what are the consequences of defining a pure virtual method?
     Be very precise.
     (6 pts)
 --

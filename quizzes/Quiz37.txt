@@ -1,0 +1,12 @@
+--
+CS371p: Quiz #37 (7 pts) [Henry]
+--
+
+--------------------------------------------------------------------------
+ 1. In C++ what are the consequences of defining a
+    pure virtual destructor?
+    Be very precise.
+    (6 pts)
+--
+
+the class becomes abstract
