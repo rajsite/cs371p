@@ -1,0 +1,17 @@
+--
+CS371p: Quiz #35 (7 pts) [Henry]
+--
+
+--------------------------------------------------------------------------
+ 1. What operations of circle run in the following three lines?
+    Be very precise.
+    (6 pts)
+
+    vector<circle>          x(10, circle(...));
+    vector<abstract_shape*> y(10, new circle(...));
+    vector<shape>           z(10, new circle(...));
+--
+
+1 non-default, non-copy constructor, 10 copy constructors, 1 destructor
+1 non-default, non-copy constructor
+1 non-default, non-copy constructor, 10 copy constructors, 1 destructor
